@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "libPhoneNumber-iOS"
-  s.version      = "1.1.0-cerner1"
+  s.version      = "1.1.0-cerner2"
   s.summary      = "iOS library for parsing, formatting, storing and validating international phone numbers from libphonenumber library."
   s.description  = <<-DESC
 libPhoneNumber for iOS
@@ -11,7 +11,7 @@ DESC
   s.authors      = { "iziz" => "zen.isis@gmail.com", "hyukhur" => "hyukhur@gmail.com" }
   s.source       = { :git => "https://github.cerner.com/careaware-connect/libPhoneNumber-iOS.git", :tag => s.version.to_s }
   s.libraries 	 = 'z'
-  s.ios.framework    = 'CoreTelephony'
+  s.ios.framework    = 'Contacts'
   s.ios.deployment_target = "12.0"
   s.osx.deployment_target = "11.0"
   s.watchos.deployment_target = "5.0"

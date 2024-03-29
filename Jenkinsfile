@@ -2,7 +2,7 @@
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '60', numToKeepStr: '10')), disableConcurrentBuilds() ])
 
-node('xcode14') {
+node('xcode15') {
     ansiColor('xterm') {
         timestamps {
             timeout(5) {
